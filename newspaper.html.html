@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Newsletter Subscription</title>
+  <style>
+    body {
+      font-family: Timesnewroman, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    .news-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .news-section h2 {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .news-section p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .subscription-box {
+      background-color: #fff;
+      padding: 20px 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .email-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+	.name-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+
+    .subscribe-btn {
+      background-color: #bcb8e6;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .subscribe-btn:hover {
+      background-color: #9f9ce0;
+    }
+
+    .privacy-note {
+      font-size: 13px;
+      color: #666;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body style="background-image: url('newsbk.jpg'); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+  <div class='news-section'>
+    <h2>Welcome to Times Of India</h2>
+    <p>The Times of India newspaper, a leading English-language publication in India, provides readers with comprehensive news coverage, encompassing national and international events, politics, business, sports, and entertainment, along with diverse perspectives and expert opinions. </p>
+  </div>
+  <div class='subscription-box'>
+    <h1>Subscribe to our newspaper</h1>
+    <form action='#' method='post'>
+	   <input type='text' class='name-input' placeholder='Your name' required>
+	   <input type='number' class='name-input' placeholder='Your phone number' required>
+      <input type='email' class='email-input' placeholder='Your email address' required>
+      <button type='submit' class='subscribe-btn'>Subscribe Now</button>
+    </form>
+    <p class='privacy-note'>We never break your trust. Your information remains private and secure with us.</p>
+  </div>
+</body>
+</html>

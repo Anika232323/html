@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Movie Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, darkblue, cornflowerblue);
+            overflow: hidden;
+        }
+        .gallery {
+            display: flex;
+            overflow: hidden;
+            width: 100vw;
+            white-space: nowrap;
+            position: relative;
+        }
+        .gallery-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 10s linear infinite;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        .gallery:hover .gallery-track {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+	    <div class="gallery">
+        <div class="gallery-track">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdb0VGE6o-UdwBZoOZ4BwllSxg_El1JCrjng&s" alt="Image 1">
+			<img src="https://s-cdn-sj.eu-central-1.linodeobjects.com/n/310/03366.webp" alt="Image 2">
+			<img src="https://occ-0-8407-1723.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXSMe2JVeWs2gq7lABFFoTf64nsAy5a1nEL6rEVYPamPBO0gV8QhBRcSxbTn3N5vBVXJngXpaSB0Vy1mnRNdFaWvOZ3MEFqo8-ceG-aX2747P1VgM0fTsjzaNVC_5RUAc04gdlvd4-snoT-4aojIoFbvpVYRrbrvbyCvG8H6R2K4rcARQs7R8vuZxMKciJ8BQg29DDDfyXLrxlCJOjInwsj439yWu3ASYRrVWuru4X9RbnM4fWcnOAMyOZywA-eBa1BC39F-FnaBaEJbprQD9M4UuibxrK4M0w2RFJsGJqedxx2qWGrK.jpg?r=ea2" alt="Image 3">
+			<img src="https://resizing.flixster.com/Umubfp25u4Neqq2gSgyHUgEjfBY=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18829068_b_h9_aa.jpg" alt="Image 4">
+			<img src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABd3SS3ID0xCvQLooBEmwPxTUvD-19r4bFnYQQFdK3VwOS-JMD1WzLvjDugcJ2BUsui_1R9__s09sp-otG96dJ7oFQhAI-Qts4lI6t8zQUUnR1ksWym1lZ-CL4ALpOQKLT9c56Q.webp?r=082" alt="Image 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdb0VGE6o-UdwBZoOZ4BwllSxg_El1JCrjng&s" alt="Image 1">
+			<img src="https://s-cdn-sj.eu-central-1.linodeobjects.com/n/310/03366.webp" alt="Image 2">
+			<img src="https://occ-0-8407-1723.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXSMe2JVeWs2gq7lABFFoTf64nsAy5a1nEL6rEVYPamPBO0gV8QhBRcSxbTn3N5vBVXJngXpaSB0Vy1mnRNdFaWvOZ3MEFqo8-ceG-aX2747P1VgM0fTsjzaNVC_5RUAc04gdlvd4-snoT-4aojIoFbvpVYRrbrvbyCvG8H6R2K4rcARQs7R8vuZxMKciJ8BQg29DDDfyXLrxlCJOjInwsj439yWu3ASYRrVWuru4X9RbnM4fWcnOAMyOZywA-eBa1BC39F-FnaBaEJbprQD9M4UuibxrK4M0w2RFJsGJqedxx2qWGrK.jpg?r=ea2" alt="Image 3">
+			<img src="https://resizing.flixster.com/Umubfp25u4Neqq2gSgyHUgEjfBY=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18829068_b_h9_aa.jpg" alt="Image 4">
+			<img src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABd3SS3ID0xCvQLooBEmwPxTUvD-19r4bFnYQQFdK3VwOS-JMD1WzLvjDugcJ2BUsui_1R9__s09sp-otG96dJ7oFQhAI-Qts4lI6t8zQUUnR1ksWym1lZ-CL4ALpOQKLT9c56Q.webp?r=082" alt="Image 5">
+
+        </div>
+    </div>
+</body>
+</html>

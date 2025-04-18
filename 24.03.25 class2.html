@@ -1,0 +1,47 @@
+<html>
+<title>alignment</title>	
+<style>
+*
+{
+box-sizing:border-box;
+}
+
+.box{
+float:left;
+padding:50px;
+width:30%;
+}
+.clearfix::after;
+{
+content:"";
+clear:both;
+display:table;
+}
+.flex-container
+{
+display:flex;
+flex-wrap:nowrap;
+background-color:coral;
+margin:10px;
+
+}
+
+
+
+</style>
+<body>
+<div class="flex-container">
+<div class="box" style="background-color:beige">
+Strawberries are vibrant, sweet, and slightly tangy fruits, cherished for their bold flavor and loaded with vitamin C, antioxidants, and fiber. 
+</div>
+
+<div class="box" style="background-color:linen">
+Watermelon is a summer favorite, known for its refreshing juiciness. Packed with water and nutrients like vitamins A and C.
+</div>
+
+<div class="box" style="background-color:seashell">
+Bananas are creamy and naturally sweet, making them a versatile fruit. they’re great for energy and can be eaten on their own, in smoothies, or as a base for baked treats.
+</div>
+</div>
+</body>
+</html>

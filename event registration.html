@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width:device-width, initial-scale=1.0">
+<title>EVENT REGISTRATION</title>
+</head>
+<style>
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:blue;
+        }
+        .card {
+            display: inline-block;
+            position: relative;
+            width: 380px;
+            background: lightblue;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            padding: 20px;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.07);
+        }
+        .badge {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff9900;
+            color: white;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 20px;
+            z-index: 2;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #232f3e;
+            margin-top: 40px;
+        }
+        .website {
+            color: #ff9900;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .website:hover {
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e68900;
+        }
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #232f3e;
+            font-size: 22px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff9900;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">I-Techno event</div>
+        <div class="company-name">I-TECHNO</div>
+        <p class="description"> Participate and win cash prizes</p>
+        <a href="http://127.0.0.1:5000" class="cta-button" target="_blank">Register Now</a>
+	</div>
+</style>
+<link rel="icon" size="32x32" type="image/x-icon" href="C:\Users\Anika.M.B\OneDrive\Documents\html\event icon.png">

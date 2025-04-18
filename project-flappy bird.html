@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Only Flappy Bird UI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            overflow: hidden;
+            margin: 0;
+        }
+        .game-container {
+            width: 300px;
+            height: 500px;
+            background: linear-gradient(to bottom,red,orange);
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #000;
+            border-radius: 10px;
+        }
+        .bird {
+            width: 40px;
+            height: 40px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            animation: flap 6s infinite alternate;
+        }
+        .pipe {
+            width: 60px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            animation: movePipe 3s linear infinite;
+        }
+        @keyframes flap {
+            0% { transform: translateY(-10px); }
+            100% { transform: translateY(10px); }
+        }
+        @keyframes movePipe {
+            from { left: 100%; }
+            to { left: -60px; }
+        }
+    </style>
+</head>
+<body>
+<audio autoplay>
+<source src="C:\Users\Anika.M.B\OneDrive\Documents\html\subway_surfers_bass.mp3">
+</audio>
+    <div class="game-container">
+        <div class="bird"></div>
+        <div class="pipe"></div>
+    </div>
+</body>
+</html>

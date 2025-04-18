@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Light Control</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: background 1s ease;
+            background: #1a1a2e; /* Dark navy when off */
+        }
+        /* Background change when light is on */
+        #toggle:checked + .container {
+            background: #0c1445; /* Deep blue for ambient lighting */
+        }
+        .light-bulb {
+            width: 100px;
+            height: 100px;
+            background: #222;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #000;
+            transition: background 1s ease, box-shadow 1s ease;
+        }
+        /* Light ON Effect */
+        #toggle:checked + .container .light-bulb {
+            background: #00eaff; /* Cool Cyan */
+            box-shadow: 0 0 50px #00eaff, 0 0 80px #00eaff;
+        }
+        /* Hide default checkbox */
+        #toggle {
+            display: none;
+        }
+        /* Toggle Switch */
+        .switch-label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #333;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        /* Hover Effect */
+        .switch-label:hover {
+            background: #555;
+            transform: scale(1.05);
+        }
+        /* Active (Light ON) State */
+        #toggle:checked + .container .switch-label {
+            background: #00eaff;
+            color: #000;
+            box-shadow: 0 4px 15px rgba(0, 234, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <div class="container">
+        <div class="light-bulb"></div>
+        <label for="toggle" class="switch-label">On/Off</label>
+    </div>
+</body>
+</html>

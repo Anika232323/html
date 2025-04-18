@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    transition: background-color 0.5s ease;
+}
+
+.light-container {
+    text-align: center;
+    position: relative;
+}
+
+.toggle-button {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.toggle-button:focus {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.lightbulb {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;

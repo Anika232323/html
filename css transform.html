@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transform</title>
+<style>
+div{
+width: 200px;
+height: 100px;
+background-color: coral;
+border: 2px solid blue;
+transform: translate(550px, 300px); /*550px-right and 200px-down*/
+}
+#d1{
+transform: rotate(30deg);
+background-color:yellow;
+}
+#d2{
+background-color:pink;
+transform: scaley(0.5);
+}
+#d3{
+background-color:lavender;
+transform: skew(20deg,30deg);
+}
+#d4{
+background-color:beige;
+transform: matrix(1,0.5,0,1,100,50); /*scaleX, skewY, skewX, scaleY, translateX, translateY*/
+}
+</style>
+</head>
+<body>
+<h2>2D Transformation</h2>
+<div>
+<p>Translate method moves the element from its current position</p>
+</div>
+<br>
+<div id="d1">
+<p>Rotate method rotates the element to the clock-wise or anti-clockwise direction</p>
+</div>
+<div id="d2">
+<p>Scale method makes the size big</p>
+</div>
+<div id="d3">
+<p>This is skew method</p>
+</div>
+<div id="d4">
+<p>This is matrixs method</p>
+</div>

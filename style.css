@@ -1,0 +1,9 @@
+a:link{color:blue;
+display:inline-block;
+text-decoration-style:dash;
+}
+a:visited{color:yellow;
+}
+a:hover{color:red;}
+a:active{color:green;}
+

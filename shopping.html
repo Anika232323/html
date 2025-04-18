@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        /* Navigation Bar Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: darkblue;
+        }
+        
+        nav ul li {
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: gabriola;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li:hover {
+            background-color: #555;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+			box-shadow:20px 40px 1px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 3px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body style="background-color:lavender;">
+<h1 style="text-align: center; color: darkviolet ; text-shadow:  2px 2px 5px #aac;">The Sara Stores</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Starting Price</th>
+                <th>Size availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saree</td>
+                <td>$250 onwards</td>
+                <td>Free size</td>
+            </tr>
+            <tr>
+                <td>Chudithar</td>
+                <td>$150 onwards</td>
+                <td>XS, S, L, XL, XXL, XXXL</td>
+            </tr>
+            <tr>
+                <td>Nighties and Innerwears</td>
+                <td>$100 onwards</td>
+                <td>S, L, XXL</td>
+            </tr>
+            <tr>
+                <td>Frock</td>
+                <td>$200 onwards</td>
+                <td>S, M, L</td>
+			</tr>
+            <tr>
+                <td>Western wear</td>
+                <td>$220 onwards</td>
+                <td>XS, S, M, L</td>
+			</tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
