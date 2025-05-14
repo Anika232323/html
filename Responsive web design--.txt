@@ -1,0 +1,25 @@
+Responsive web design--
+--webpage looks good in all the devices
+1) viewport -- <meta> element
+	--width=device-width
+	--initial-scale=1.0 (zoom level)
+
+2) Grid-view
+
+3) Media-queries 
+
+@media screen and(min-width:600px)
+
+@media only screen and(min-width:600px){
+div
+{
+display:none;
+}
+}
+
+@media only screen and(min-width:600px){
+body
+{
+background-image: url(' ');
+}
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <style>
+    :root {
+      /* Colors */
+      --primary-color:PaleVioletRed; /* Violet */
+      --secondary-color: #FFB6C1; /* LightPink */
+      --bg-color: #ffffff; /* White */
+      --text-color: #333333; /* Dark Gray */
+
+      /* Typography */
+      --font-family: 'Arial', sans-serif;
+      --font-size: 16px;
+
+      /* Spacing */
+      --padding: 20px;
+      --margin: 20px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: LavenderBlush;
+      padding: var(--padding);
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      padding: var(--padding);
+      text-align: center;
+    }
+
+    nav a {
+      color:LavenderBlush;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: var(--padding);
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: LavenderBlush;
+      padding: var(--padding);
+      border: none;
+      cursor: pointer;
+      font-size: var(--font-size);
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: var(--padding);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .summer-theme {
+      --primary-color: #FF4500; /* OrangeRed */
+      --secondary-color:#FFA07A ; /* LightSalmon */
+      --bg-color: #f5f5f5; /* Light Gray */
+      --text-color: #2c3e50; /* Dark Blue Gray */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OrionWave Company</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome to Our Website</h2>
+    <p>This is an example of a website with theme switching capabilities.</p>
+    <button>Learn More</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OrionWave Company</p>
+  </footer>
+
+  <!-- Button to toggle theme -->
+  <div style="text-align: center; margin-top: 80px;">
+    <button onclick="document.body.classList.toggle('summer-theme')">Switch to Summer Theme</button>
+  </div>
+</body>
+</html>

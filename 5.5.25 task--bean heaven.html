@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean Haven Coffee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: WhiteSmoke;
+      color: Sienna;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #8b5e3c;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #a97455;
+    }
+
+    .hero {
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FVICRAYS-Cappuccino-Saucers-Ceramic-Coffee%2Fdp%2FB09M9JFB8T&psig=AOvVaw0Uj35HLz4TnKBefU9LHIfW&ust=1746509829065000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPjXpKHOi40DFQAAAAAdAAAAABAQ');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px #000;
+      text-align: center;
+    }
+	.tsize {
+		font-size: 1.5rem;
+	}
+	
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .menu {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .menu h2 {
+      margin-bottom: 1rem;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      background-color: #f3e9dc;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .menu-item {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+	<div class="tsize">
+    <h1 style="font-family:Gabriola;">Bean Haven Coffee</h1>
+	</div>
+    <p><i>More espresso, less depresso</i></p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Bean Haven</h1>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Favorites</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>A bold, concentrated shot of coffee served in a small cup. Rich in flavor and aroma, it's the foundation of lattes, cappuccinos, and more.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Guillermo Coffee</h3>
+        <p> A zesty twist on espresso, made with two bold shots poured over fresh lime slices. Refreshing and vibrant, served hot or iced.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Red-Eye Coffee</h3>
+        <p>A powerful blend of drip coffee and a shot of espresso. Bold, intense, and made for those who crave a serious caffeine kick.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <p>📍 5/76 Lake view street, Chrompet</p>
+    <p>⏰ Open Daily: 7 AM - 9 PM</p>
+	<p>📞 Contact: 8939216895</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.grid-container
+{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+background-color: #7cfc00;
+padding: 10px;
+animation: gridframe 7s infinite;
+}
+@keyframes gridframe{
+0% {grid-template-columns: repeat(4, 1fr);}
+50% {grid-template-columns: 100px 1fr 1fr 1fr;}
+100% {grid-template-columns: repeat(4, 1fr):}
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+	<div> 1 </div>
+	<div> 2 </div>
+	<div> 3 </div>
+	<div> 4 </div>
+</div>
+</body>
+</html>
